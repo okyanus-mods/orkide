@@ -3,19 +3,36 @@ plugins {
 }
 
 repositories {
+    mavenCentral()
+
     maven { url 'https://jitpack.io' }
+    maven { url "https://hub.spigotmc.org/nexus/content/repositories/snapshots" }
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
 }
 
-group 'club.issizler' // Change this
+group 'club.issizler'
 version '0.1.0'
 
 sourceCompatibility = 1.8
+
+configurations {
+    fatJar
+    compile.extendsFrom fatJar
+}
 
 dependencies {
     // Please update to the latest version
     // https://jitpack.io/#okyanus-mc/api
 
-    implementation "com.github.okyanus-mc:api:9a026135d3"
+    implementation "com.github.okyanus-mc:api"
+
+    fatJar "org.spigotmc:spigot-api:1.14.3-R0.1-SNAPSHOT"
+}
+
+jar {
+    from {
+        configurations.fatJar.collect { it.isDirectory() ? it : zipTree(it) }
+    }
 }
 
 processResources {

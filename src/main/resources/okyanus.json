@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "id": "mod-template",
+  "id": "orkide",
   "version": "${version}",
-  "name": "Mod Template",
-  "description": "The mod template for Okyanus",
+  "name": "Orkide",
+  "description": "BukkitAPI in Okyanus",
   "environment": "server",
   "depends": {
     "okyanus": ">=0.1.0",
@@ -11,7 +11,7 @@
   },
   "entrypoints": {
     "server": [
-      "club.issizler.template.TemplateMod"
+      "club.issizler.orkide.OrkideMod"
     ]
   }
 }
