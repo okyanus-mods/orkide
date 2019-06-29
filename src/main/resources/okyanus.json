@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "mod-template",
+  "version": "${version}",
+  "name": "Mod Template",
+  "description": "The mod template for Okyanus",
+  "environment": "server",
+  "depends": {
+    "okyanus": ">=0.1.0",
+    "okyanus-runtime": ">=0.1.0"
+  },
+  "entrypoints": {
+    "server": [
+      "club.issizler.template.TemplateMod"
+    ]
+  }
+}
