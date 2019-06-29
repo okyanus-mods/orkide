@@ -23,6 +23,7 @@ import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.ServicesManager;
 import org.bukkit.plugin.SimpleServicesManager;
 import org.bukkit.plugin.messaging.Messenger;
+import org.bukkit.plugin.messaging.StandardMessenger;
 import org.bukkit.scheduler.BukkitScheduler;
 import org.bukkit.scoreboard.ScoreboardManager;
 import org.bukkit.util.CachedServerIcon;
@@ -41,11 +42,13 @@ public class ServerImpl implements Server {
     private club.issizler.okyanus.api.Server server;
     private BukkitScheduler scheduler;
     private ServicesManager servicesManager;
+    private Messenger messenger;
 
     public ServerImpl(club.issizler.okyanus.api.Server server) {
         this.server = server;
         this.scheduler = new BukkitSchedulerImpl();
         this.servicesManager = new SimpleServicesManager();
+        this.messenger = new StandardMessenger();
 
         Bukkit.setServer(this);
     }
@@ -407,7 +410,7 @@ public class ServerImpl implements Server {
 
     @Override
     public Messenger getMessenger() {
-        return null;
+        return messenger;
     }
 
     @Override

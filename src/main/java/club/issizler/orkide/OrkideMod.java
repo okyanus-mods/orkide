@@ -6,6 +6,7 @@ import club.issizler.okyanus.api.cmd.CommandManager;
 import club.issizler.okyanus.api.event.EventManager;
 import club.issizler.orkide.commands.PluginsCommand;
 import club.issizler.orkide.events.ReadyListener;
+import club.issizler.orkide.events.StopListener;
 
 import java.io.File;
 
@@ -16,7 +17,9 @@ public class OrkideMod implements Mod {
     @Override
     public void init() {
         System.setProperty("java.util.logging.manager", "org.apache.logging.log4j.jul.LogManager");
+
         EventManager.getInstance().register(new ReadyListener(orkide));
+        EventManager.getInstance().register(new StopListener(orkide));
 
         File plugins = new File("./plugins");
         if (!plugins.exists()) {
