@@ -7,7 +7,6 @@ import org.bukkit.advancement.Advancement;
 import org.bukkit.block.data.BlockData;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.material.MaterialData;
-import org.bukkit.plugin.InvalidPluginException;
 import org.bukkit.plugin.PluginDescriptionFile;
 
 public class UnsafeValuesImpl implements UnsafeValues {
@@ -53,7 +52,7 @@ public class UnsafeValuesImpl implements UnsafeValues {
     }
 
     @Override
-    public void checkSupported(PluginDescriptionFile pdf) throws InvalidPluginException {
+    public void checkSupported(PluginDescriptionFile pdf) {
         // what am I supposed to do? check for a version I guess?
     }
 

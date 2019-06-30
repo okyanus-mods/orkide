@@ -120,7 +120,7 @@ public class ServerImpl implements Server {
 
     @Override
     public void setWhitelist(boolean value) {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -130,7 +130,7 @@ public class ServerImpl implements Server {
 
     @Override
     public void reloadWhitelist() {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -250,12 +250,12 @@ public class ServerImpl implements Server {
 
     @Override
     public void reload() {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void reloadData() {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -270,7 +270,7 @@ public class ServerImpl implements Server {
 
     @Override
     public void savePlayers() {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -295,12 +295,12 @@ public class ServerImpl implements Server {
 
     @Override
     public void clearRecipes() {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void resetRecipes() {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -315,7 +315,7 @@ public class ServerImpl implements Server {
 
     @Override
     public void setSpawnRadius(int value) {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -335,7 +335,7 @@ public class ServerImpl implements Server {
 
     @Override
     public void shutdown() {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -360,12 +360,12 @@ public class ServerImpl implements Server {
 
     @Override
     public void banIP(String address) {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void unbanIP(String address) {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -390,7 +390,7 @@ public class ServerImpl implements Server {
 
     @Override
     public void setDefaultGameMode(GameMode mode) {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -515,7 +515,7 @@ public class ServerImpl implements Server {
 
     @Override
     public void setIdleTimeout(int threshold) {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -615,7 +615,7 @@ public class ServerImpl implements Server {
 
     @Override
     public void sendPluginMessage(Plugin source, String channel, byte[] message) {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override

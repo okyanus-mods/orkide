@@ -87,7 +87,7 @@ public class WorldImpl implements World {
 
     @Override
     public void loadChunk(Chunk chunk) {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -107,7 +107,7 @@ public class WorldImpl implements World {
 
     @Override
     public void loadChunk(int x, int z) {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -152,7 +152,7 @@ public class WorldImpl implements World {
 
     @Override
     public void setChunkForceLoaded(int x, int z, boolean forced) {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -327,7 +327,7 @@ public class WorldImpl implements World {
 
     @Override
     public void setTime(long time) {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -337,7 +337,7 @@ public class WorldImpl implements World {
 
     @Override
     public void setFullTime(long time) {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -347,7 +347,7 @@ public class WorldImpl implements World {
 
     @Override
     public void setStorm(boolean hasStorm) {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -357,7 +357,7 @@ public class WorldImpl implements World {
 
     @Override
     public void setWeatherDuration(int duration) {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -367,7 +367,7 @@ public class WorldImpl implements World {
 
     @Override
     public void setThundering(boolean thundering) {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -377,7 +377,7 @@ public class WorldImpl implements World {
 
     @Override
     public void setThunderDuration(int duration) {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -422,7 +422,7 @@ public class WorldImpl implements World {
 
     @Override
     public void setPVP(boolean pvp) {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -432,7 +432,7 @@ public class WorldImpl implements World {
 
     @Override
     public void save() {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -467,22 +467,22 @@ public class WorldImpl implements World {
 
     @Override
     public void playEffect(Location location, Effect effect, int data) {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void playEffect(Location location, Effect effect, int data, int radius) {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public <T> void playEffect(Location location, Effect effect, T data) {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public <T> void playEffect(Location location, Effect effect, T data, int radius) {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -492,7 +492,7 @@ public class WorldImpl implements World {
 
     @Override
     public void setSpawnFlags(boolean allowMonsters, boolean allowAnimals) {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -512,7 +512,7 @@ public class WorldImpl implements World {
 
     @Override
     public void setBiome(int x, int z, Biome bio) {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -542,7 +542,7 @@ public class WorldImpl implements World {
 
     @Override
     public void setKeepSpawnInMemory(boolean keepLoaded) {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -552,7 +552,7 @@ public class WorldImpl implements World {
 
     @Override
     public void setAutoSave(boolean value) {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -562,7 +562,7 @@ public class WorldImpl implements World {
 
     @Override
     public void setDifficulty(Difficulty difficulty) {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -587,7 +587,7 @@ public class WorldImpl implements World {
 
     @Override
     public void setTicksPerAnimalSpawns(int ticksPerAnimalSpawns) {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -597,7 +597,7 @@ public class WorldImpl implements World {
 
     @Override
     public void setTicksPerMonsterSpawns(int ticksPerMonsterSpawns) {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -607,7 +607,7 @@ public class WorldImpl implements World {
 
     @Override
     public void setMonsterSpawnLimit(int limit) {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -617,7 +617,7 @@ public class WorldImpl implements World {
 
     @Override
     public void setAnimalSpawnLimit(int limit) {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -627,7 +627,7 @@ public class WorldImpl implements World {
 
     @Override
     public void setWaterAnimalSpawnLimit(int limit) {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -637,27 +637,27 @@ public class WorldImpl implements World {
 
     @Override
     public void setAmbientSpawnLimit(int limit) {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void playSound(Location location, Sound sound, float volume, float pitch) {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void playSound(Location location, String sound, float volume, float pitch) {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void playSound(Location location, Sound sound, SoundCategory category, float volume, float pitch) {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void playSound(Location location, String sound, SoundCategory category, float volume, float pitch) {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -702,72 +702,72 @@ public class WorldImpl implements World {
 
     @Override
     public void spawnParticle(Particle particle, Location location, int count) {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void spawnParticle(Particle particle, double x, double y, double z, int count) {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public <T> void spawnParticle(Particle particle, Location location, int count, T data) {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public <T> void spawnParticle(Particle particle, double x, double y, double z, int count, T data) {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void spawnParticle(Particle particle, Location location, int count, double offsetX, double offsetY, double offsetZ) {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void spawnParticle(Particle particle, double x, double y, double z, int count, double offsetX, double offsetY, double offsetZ) {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public <T> void spawnParticle(Particle particle, Location location, int count, double offsetX, double offsetY, double offsetZ, T data) {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public <T> void spawnParticle(Particle particle, double x, double y, double z, int count, double offsetX, double offsetY, double offsetZ, T data) {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void spawnParticle(Particle particle, Location location, int count, double offsetX, double offsetY, double offsetZ, double extra) {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void spawnParticle(Particle particle, double x, double y, double z, int count, double offsetX, double offsetY, double offsetZ, double extra) {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public <T> void spawnParticle(Particle particle, Location location, int count, double offsetX, double offsetY, double offsetZ, double extra, T data) {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public <T> void spawnParticle(Particle particle, double x, double y, double z, int count, double offsetX, double offsetY, double offsetZ, double extra, T data) {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public <T> void spawnParticle(Particle particle, Location location, int count, double offsetX, double offsetY, double offsetZ, double extra, T data, boolean force) {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public <T> void spawnParticle(Particle particle, double x, double y, double z, int count, double offsetX, double offsetY, double offsetZ, double extra, T data, boolean force) {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -782,7 +782,7 @@ public class WorldImpl implements World {
 
     @Override
     public void setMetadata(String metadataKey, MetadataValue newMetadataValue) {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -797,12 +797,12 @@ public class WorldImpl implements World {
 
     @Override
     public void removeMetadata(String metadataKey, Plugin owningPlugin) {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void sendPluginMessage(Plugin source, String channel, byte[] message) {
-
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
