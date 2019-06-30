@@ -9,18 +9,18 @@ import java.util.Objects;
 
 public class BukkitTaskImpl implements BukkitTask, Runnable {
 
-    private volatile BukkitTaskImpl next = null;
     public static final int ERROR = 0;
     public static final int NO_REPEATING = -1;
     public static final int CANCEL = -2;
     public static final int PROCESS_FOR_FUTURE = -3;
     public static final int DONE_FOR_FUTURE = -4;
-    private volatile long period;
-    private long nextRun;
     private final Runnable rTask;
     private final Consumer<BukkitTask> cTask;
     private final Plugin plugin;
     private final int id;
+    private volatile BukkitTaskImpl next = null;
+    private volatile long period;
+    private long nextRun;
 
     BukkitTaskImpl() {
         this(null, null, BukkitTaskImpl.NO_REPEATING, BukkitTaskImpl.NO_REPEATING);

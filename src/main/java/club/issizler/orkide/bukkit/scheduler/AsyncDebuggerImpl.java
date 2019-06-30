@@ -4,12 +4,12 @@ import org.bukkit.plugin.Plugin;
 
 class AsyncDebuggerImpl {
 
-    private AsyncDebuggerImpl next = null;
     private final int expiry;
     private final Plugin plugin;
     private final Class<?> clazz;
+    private AsyncDebuggerImpl next = null;
 
-    AsyncDebuggerImpl(final int expiry, final  Plugin plugin, final Class<?> clazz) {
+    AsyncDebuggerImpl(final int expiry, final Plugin plugin, final Class<?> clazz) {
         this.expiry = expiry;
         this.plugin = plugin;
         this.clazz = clazz;

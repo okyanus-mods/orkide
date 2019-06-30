@@ -18,19 +18,33 @@ import java.util.logging.Level;
 
 public class BukkitSchedulerImpl implements BukkitScheduler {
 
+    private static final int RECENT_TICKS = 30;
     private final AtomicInteger ids = new AtomicInteger(1);
-    private volatile BukkitTaskImpl head = new BukkitTaskImpl();
-    private final AtomicReference<BukkitTaskImpl> tail = new AtomicReference<>(head);
     private final PriorityQueue<BukkitTaskImpl> pending = new PriorityQueue<>(10,
             Comparator.comparingLong(BukkitTaskImpl::getNextRun).thenComparingInt(BukkitTaskImpl::getTaskId));
     private final List<BukkitTaskImpl> temp = new ArrayList<>();
     private final ConcurrentHashMap<Integer, BukkitTaskImpl> runners = new ConcurrentHashMap<>();
+    private final Executor executor = Executors.newCachedThreadPool(new ThreadFactoryBuilder().setNameFormat("Orkide Scheduler Thread - %d").build());
+    private volatile BukkitTaskImpl head = new BukkitTaskImpl();
+    private final AtomicReference<BukkitTaskImpl> tail = new AtomicReference<>(head);
     private volatile BukkitTaskImpl currentTask = null;
     private volatile int currentTick = -1;
-    private final Executor executor = Executors.newCachedThreadPool(new ThreadFactoryBuilder().setNameFormat("Orkide Scheduler Thread - %d").build());
-    private AsyncDebuggerImpl debugHead = new AsyncDebuggerImpl(-1, null, null) {@Override StringBuilder debugTo(StringBuilder string) {return string;}};
+    private AsyncDebuggerImpl debugHead = new AsyncDebuggerImpl(-1, null, null) {
+        @Override
+        StringBuilder debugTo(StringBuilder string) {
+            return string;
+        }
+    };
     private AsyncDebuggerImpl debugTail = debugHead;
-    private static final int RECENT_TICKS = 30;
+
+    private static void validate(final Plugin plugin, final Object task) {
+        Validate.notNull(plugin, "Plugin cannot be null");
+        Validate.notNull(task, "Task cannot be null");
+        Validate.isTrue(task instanceof Runnable || task instanceof Consumer || task instanceof Callable, "Task must be Runnable, Consumer, or Callable");
+        if (!plugin.isEnabled()) {
+            throw new IllegalPluginAccessException("Plugin attempted to register task while disabled");
+        }
+    }
 
     private <E> E deprecated() {
         throw new UnsupportedOperationException("Deprecated, so not implemented in Orkide!");
@@ -291,7 +305,6 @@ public class BukkitSchedulerImpl implements BukkitScheduler {
         return handle(new BukkitTaskImpl(plugin, runnable, nextId(), period), delay);
     }
 
-
     public BukkitTask runTaskTimerAsynchronously(Plugin plugin, Object runnable, long delay, long period) {
         validate(plugin, runnable);
         if (delay < 0L) {
@@ -366,15 +379,6 @@ public class BukkitSchedulerImpl implements BukkitScheduler {
         task.setNextRun(currentTick + delay);
         addTask(task);
         return task;
-    }
-
-    private static void validate(final Plugin plugin, final Object task) {
-        Validate.notNull(plugin, "Plugin cannot be null");
-        Validate.notNull(task, "Task cannot be null");
-        Validate.isTrue(task instanceof Runnable || task instanceof Consumer || task instanceof Callable, "Task must be Runnable, Consumer, or Callable");
-        if (!plugin.isEnabled()) {
-            throw new IllegalPluginAccessException("Plugin attempted to register task while disabled");
-        }
     }
 
     private int nextId() {

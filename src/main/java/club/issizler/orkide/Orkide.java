@@ -2,7 +2,6 @@ package club.issizler.orkide;
 
 
 import club.issizler.orkide.bukkit.ServerImpl;
-import org.bukkit.Server;
 import org.bukkit.command.SimpleCommandMap;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.PluginLoadOrder;

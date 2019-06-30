@@ -556,13 +556,13 @@ public class WorldImpl implements World {
     }
 
     @Override
-    public void setDifficulty(Difficulty difficulty) {
-
+    public Difficulty getDifficulty() {
+        return null;
     }
 
     @Override
-    public Difficulty getDifficulty() {
-        return null;
+    public void setDifficulty(Difficulty difficulty) {
+
     }
 
     @Override
