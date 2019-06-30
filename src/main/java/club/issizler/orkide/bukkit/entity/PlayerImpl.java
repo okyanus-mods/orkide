@@ -71,7 +71,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setPlayerListHeader(String header) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -81,12 +81,12 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setPlayerListFooter(String footer) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void setPlayerListHeaderFooter(String header, String footer) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -96,7 +96,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setCompassTarget(Location loc) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -111,7 +111,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void acceptConversationInput(String input) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -121,17 +121,17 @@ public class PlayerImpl implements Player {
 
     @Override
     public void abandonConversation(Conversation conversation) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void abandonConversation(Conversation conversation, ConversationAbandonedEvent details) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void sendRawMessage(String message) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -141,7 +141,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void chat(String msg) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -156,7 +156,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setSneaking(boolean sneak) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -166,17 +166,17 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setSprinting(boolean sprinting) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void saveData() {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void loadData() {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -186,77 +186,77 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setSleepingIgnored(boolean isSleeping) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void playNote(Location loc, byte instrument, byte note) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void playNote(Location loc, Instrument instrument, Note note) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void playSound(Location location, Sound sound, float volume, float pitch) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void playSound(Location location, String sound, float volume, float pitch) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void playSound(Location location, Sound sound, SoundCategory category, float volume, float pitch) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void playSound(Location location, String sound, SoundCategory category, float volume, float pitch) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void stopSound(Sound sound) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void stopSound(String sound) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void stopSound(Sound sound, SoundCategory category) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void stopSound(String sound, SoundCategory category) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void playEffect(Location loc, Effect effect, int data) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public <T> void playEffect(Location loc, Effect effect, T data) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void sendBlockChange(Location loc, Material material, byte data) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void sendBlockChange(Location loc, BlockData block) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -266,32 +266,32 @@ public class PlayerImpl implements Player {
 
     @Override
     public void sendSignChange(Location loc, String[] lines) throws IllegalArgumentException {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void sendSignChange(Location loc, String[] lines, DyeColor dyeColor) throws IllegalArgumentException {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void sendMap(MapView map) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void updateInventory() {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void awardAchievement(Achievement achievement) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void removeAchievement(Achievement achievement) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -301,27 +301,27 @@ public class PlayerImpl implements Player {
 
     @Override
     public void incrementStatistic(Statistic statistic) throws IllegalArgumentException {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void decrementStatistic(Statistic statistic) throws IllegalArgumentException {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void incrementStatistic(Statistic statistic, int amount) throws IllegalArgumentException {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void decrementStatistic(Statistic statistic, int amount) throws IllegalArgumentException {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void setStatistic(Statistic statistic, int newValue) throws IllegalArgumentException {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -331,12 +331,12 @@ public class PlayerImpl implements Player {
 
     @Override
     public void incrementStatistic(Statistic statistic, Material material) throws IllegalArgumentException {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void decrementStatistic(Statistic statistic, Material material) throws IllegalArgumentException {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -346,27 +346,27 @@ public class PlayerImpl implements Player {
 
     @Override
     public void incrementStatistic(Statistic statistic, Material material, int amount) throws IllegalArgumentException {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void decrementStatistic(Statistic statistic, Material material, int amount) throws IllegalArgumentException {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void setStatistic(Statistic statistic, Material material, int newValue) throws IllegalArgumentException {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void incrementStatistic(Statistic statistic, EntityType entityType) throws IllegalArgumentException {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void decrementStatistic(Statistic statistic, EntityType entityType) throws IllegalArgumentException {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -376,22 +376,22 @@ public class PlayerImpl implements Player {
 
     @Override
     public void incrementStatistic(Statistic statistic, EntityType entityType, int amount) throws IllegalArgumentException {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void decrementStatistic(Statistic statistic, EntityType entityType, int amount) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void setStatistic(Statistic statistic, EntityType entityType, int newValue) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void setPlayerTime(long time, boolean relative) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -411,7 +411,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void resetPlayerTime() {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -421,22 +421,22 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setPlayerWeather(WeatherType type) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void resetPlayerWeather() {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void giveExp(int amount) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void giveExpLevels(int amount) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -446,7 +446,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setExp(float exp) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -456,7 +456,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setLevel(int level) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -466,7 +466,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setTotalExperience(int exp) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -476,7 +476,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setExhaustion(float value) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -486,7 +486,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setSaturation(float value) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -496,7 +496,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setFoodLevel(int value) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -506,27 +506,27 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setAllowFlight(boolean flight) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void hidePlayer(Player player) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void hidePlayer(Plugin plugin, Player player) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void showPlayer(Player player) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void showPlayer(Plugin plugin, Player player) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -541,7 +541,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setFlying(boolean value) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -551,7 +551,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setFlySpeed(float value) throws IllegalArgumentException {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -561,22 +561,22 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setWalkSpeed(float value) throws IllegalArgumentException {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void setTexturePack(String url) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void setResourcePack(String url) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void setResourcePack(String url, byte[] hash) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -586,7 +586,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setScoreboard(Scoreboard scoreboard) throws IllegalArgumentException, IllegalStateException {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -596,7 +596,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setHealthScaled(boolean scale) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -606,7 +606,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setHealthScale(double scale) throws IllegalArgumentException {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -616,82 +616,82 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setSpectatorTarget(Entity entity) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void sendTitle(String title, String subtitle) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void sendTitle(String title, String subtitle, int fadeIn, int stay, int fadeOut) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void resetTitle() {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void spawnParticle(Particle particle, Location location, int count) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void spawnParticle(Particle particle, double x, double y, double z, int count) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public <T> void spawnParticle(Particle particle, Location location, int count, T data) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public <T> void spawnParticle(Particle particle, double x, double y, double z, int count, T data) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void spawnParticle(Particle particle, Location location, int count, double offsetX, double offsetY, double offsetZ) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void spawnParticle(Particle particle, double x, double y, double z, int count, double offsetX, double offsetY, double offsetZ) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public <T> void spawnParticle(Particle particle, Location location, int count, double offsetX, double offsetY, double offsetZ, T data) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public <T> void spawnParticle(Particle particle, double x, double y, double z, int count, double offsetX, double offsetY, double offsetZ, T data) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void spawnParticle(Particle particle, Location location, int count, double offsetX, double offsetY, double offsetZ, double extra) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void spawnParticle(Particle particle, double x, double y, double z, int count, double offsetX, double offsetY, double offsetZ, double extra) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public <T> void spawnParticle(Particle particle, Location location, int count, double offsetX, double offsetY, double offsetZ, double extra, T data) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public <T> void spawnParticle(Particle particle, double x, double y, double z, int count, double offsetX, double offsetY, double offsetZ, double extra, T data) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -711,12 +711,12 @@ public class PlayerImpl implements Player {
 
     @Override
     public void updateCommands() {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void openBook(ItemStack book) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -737,7 +737,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setVelocity(Vector velocity) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -767,7 +767,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setRotation(float yaw, float pitch) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -810,7 +810,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setFireTicks(int ticks) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -820,7 +820,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void remove() {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -857,7 +857,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setPersistent(boolean persistent) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -902,7 +902,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setFallDistance(float distance) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -912,7 +912,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setLastDamageCause(EntityDamageEvent event) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -927,12 +927,12 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setTicksLived(int value) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void playEffect(EntityEffect type) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -962,7 +962,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setCustomNameVisible(boolean flag) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -972,7 +972,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setGlowing(boolean flag) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -982,7 +982,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setInvulnerable(boolean flag) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -992,7 +992,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setSilent(boolean flag) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -1002,7 +1002,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setGravity(boolean gravity) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -1012,7 +1012,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setPortalCooldown(int cooldown) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -1067,7 +1067,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setWhitelisted(boolean value) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -1142,7 +1142,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void openInventory(InventoryView inventory) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -1157,7 +1157,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void closeInventory() {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -1167,7 +1167,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setItemInHand(ItemStack item) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -1177,7 +1177,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setItemOnCursor(ItemStack item) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -1192,7 +1192,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setCooldown(Material material, int ticks) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -1207,12 +1207,12 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setBedSpawnLocation(Location location) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void setBedSpawnLocation(Location location, boolean force) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -1222,7 +1222,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void wakeup(boolean setSpawnLocation) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -1237,7 +1237,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setGameMode(GameMode mode) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -1282,7 +1282,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setShoulderEntityLeft(Entity entity) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -1292,7 +1292,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setShoulderEntityRight(Entity entity) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -1352,7 +1352,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setRemainingAir(int ticks) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -1362,7 +1362,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setMaximumAir(int ticks) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -1372,7 +1372,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setMaximumNoDamageTicks(int ticks) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -1382,7 +1382,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setLastDamage(double damage) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -1392,7 +1392,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setNoDamageTicks(int ticks) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -1427,7 +1427,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void removePotionEffect(PotionEffectType type) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -1447,7 +1447,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setRemoveWhenFarAway(boolean remove) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -1462,7 +1462,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setCanPickupItems(boolean pickup) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -1487,7 +1487,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setGliding(boolean gliding) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -1497,7 +1497,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setSwimming(boolean swimming) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -1512,7 +1512,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setAI(boolean ai) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -1527,7 +1527,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setCollidable(boolean collidable) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -1537,7 +1537,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public <T> void setMemory(MemoryKey<T> memoryKey, T memoryValue) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -1547,12 +1547,12 @@ public class PlayerImpl implements Player {
 
     @Override
     public void damage(double amount) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void damage(double amount, Entity source) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -1562,7 +1562,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setHealth(double health) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -1572,12 +1572,12 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setMaxHealth(double health) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void resetMaxHealth() {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -1592,7 +1592,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setMetadata(String metadataKey, MetadataValue newMetadataValue) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -1607,7 +1607,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void removeMetadata(String metadataKey, Plugin owningPlugin) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -1652,12 +1652,12 @@ public class PlayerImpl implements Player {
 
     @Override
     public void removeAttachment(PermissionAttachment attachment) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
     public void recalculatePermissions() {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -1672,7 +1672,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void setOp(boolean value) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
@@ -1682,7 +1682,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public void sendPluginMessage(Plugin source, String channel, byte[] message) {
-        throw new RuntimeException("Orkid doesn't support this yet! Contact the devs asap!");
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
     }
 
     @Override
