@@ -29,13 +29,6 @@ public class BukkitSchedulerImpl implements BukkitScheduler {
     private final AtomicReference<BukkitTaskImpl> tail = new AtomicReference<>(head);
     private volatile BukkitTaskImpl currentTask = null;
     private volatile int currentTick = -1;
-    private AsyncDebuggerImpl debugHead = new AsyncDebuggerImpl(-1, null, null) {
-        @Override
-        StringBuilder debugTo(StringBuilder string) {
-            return string;
-        }
-    };
-    private AsyncDebuggerImpl debugTail = debugHead;
 
     private static void validate(final Plugin plugin, final Object task) {
         Validate.notNull(plugin, "Plugin cannot be null");
@@ -348,7 +341,6 @@ public class BukkitSchedulerImpl implements BukkitScheduler {
                 }
                 parsePending();
             } else {
-                debugTail = debugTail.setNext(new AsyncDebuggerImpl(currentTick + RECENT_TICKS, task.getOwner(), task.getTaskClass()));
                 executor.execute(task);
                 // We don't need to parse pending
                 // (async tasks must live with race-conditions if they attempt to cancel between these few lines of code)
@@ -363,7 +355,6 @@ public class BukkitSchedulerImpl implements BukkitScheduler {
         }
         pending.addAll(temp);
         temp.clear();
-        debugHead = debugHead.getNextHead(currentTick);
     }
 
     private void addTask(final BukkitTaskImpl task) {
