@@ -2,6 +2,6 @@ rootProject.name = 'orkide'
 
 includeBuild("../../api") {
     dependencySubstitution {
-        substitute module('com.github.okyanus-mc:api') with project(':')
+        substitute module('club.issizler.okyanus:api') with project(':')
     }
 }
