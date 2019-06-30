@@ -2,7 +2,6 @@ package club.issizler.orkide;
 
 
 import club.issizler.orkide.bukkit.ServerImpl;
-import org.bukkit.command.SimpleCommandMap;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.PluginLoadOrder;
 import org.bukkit.plugin.PluginManager;
@@ -13,7 +12,7 @@ import java.io.File;
 
 public class Orkide {
 
-    public PluginManager manager = new SimplePluginManager(Globals.server, new SimpleCommandMap(Globals.server));
+    public PluginManager manager = new SimplePluginManager(Globals.server, ((ServerImpl) Globals.server).commandMap);
 
     public Orkide() {
         ((ServerImpl) Globals.server).pluginManager = manager;

@@ -432,17 +432,17 @@ public class BukkitSchedulerImpl implements BukkitScheduler {
 
     @Override
     public int scheduleAsyncDelayedTask(Plugin plugin, Runnable task, long delay) {
-        return deprecated();
+        return scheduleAsyncRepeatingTask(plugin, task, 0L, BukkitTaskImpl.NO_REPEATING);
     }
 
     @Override
     public int scheduleAsyncDelayedTask(Plugin plugin, Runnable task) {
-        return deprecated();
+        return scheduleAsyncDelayedTask(plugin, task, 0L);
     }
 
     @Override
     public int scheduleAsyncRepeatingTask(Plugin plugin, Runnable task, long delay, long period) {
-        return deprecated();
+        return runTaskTimerAsynchronously(plugin, (Object) task, delay, period).getTaskId();
     }
 
     @Override

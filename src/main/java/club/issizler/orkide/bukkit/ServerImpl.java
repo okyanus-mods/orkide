@@ -1,15 +1,13 @@
 package club.issizler.orkide.bukkit;
 
+import club.issizler.orkide.bukkit.command.ConsoleCommandSenderImpl;
 import club.issizler.orkide.bukkit.entity.PlayerImpl;
 import club.issizler.orkide.bukkit.scheduler.BukkitSchedulerImpl;
 import org.bukkit.*;
 import org.bukkit.advancement.Advancement;
 import org.bukkit.block.data.BlockData;
 import org.bukkit.boss.*;
-import org.bukkit.command.CommandException;
-import org.bukkit.command.CommandSender;
-import org.bukkit.command.ConsoleCommandSender;
-import org.bukkit.command.PluginCommand;
+import org.bukkit.command.*;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
 import org.bukkit.event.inventory.InventoryType;
@@ -40,16 +38,14 @@ public class ServerImpl implements Server {
     public PluginManager pluginManager; // late init
 
     private club.issizler.okyanus.api.Server server;
-    private BukkitScheduler scheduler;
-    private ServicesManager servicesManager;
-    private Messenger messenger;
+    private BukkitScheduler scheduler = new BukkitSchedulerImpl();
+    private ServicesManager servicesManager = new SimpleServicesManager();
+    private Messenger messenger = new StandardMessenger();
+    private ConsoleCommandSender consoleSender = new ConsoleCommandSenderImpl(this);
+    public SimpleCommandMap commandMap = new SimpleCommandMap(this);
 
     public ServerImpl(club.issizler.okyanus.api.Server server) {
         this.server = server;
-        this.scheduler = new BukkitSchedulerImpl();
-        this.servicesManager = new SimpleServicesManager();
-        this.messenger = new StandardMessenger();
-
         Bukkit.setServer(this);
     }
 
@@ -145,7 +141,7 @@ public class ServerImpl implements Server {
 
     @Override
     public File getUpdateFolderFile() {
-        return new File("update");
+        return new File(getUpdateFolder());
     }
 
     @Override
@@ -265,7 +261,13 @@ public class ServerImpl implements Server {
 
     @Override
     public PluginCommand getPluginCommand(String name) {
-        return null;
+        Command command = commandMap.getCommand(name);
+
+        if (command instanceof PluginCommand) {
+            return (PluginCommand) command;
+        } else {
+            return null;
+        }
     }
 
     @Override
@@ -395,7 +397,7 @@ public class ServerImpl implements Server {
 
     @Override
     public ConsoleCommandSender getConsoleSender() {
-        return null;
+        return consoleSender;
     }
 
     @Override

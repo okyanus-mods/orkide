@@ -38,9 +38,9 @@ import java.util.*;
 
 public class PlayerImpl implements Player {
 
-    private club.issizler.okyanus.api.Player player;
+    private club.issizler.okyanus.api.entity.Player player;
 
-    public PlayerImpl(club.issizler.okyanus.api.Player player) {
+    public PlayerImpl(club.issizler.okyanus.api.entity.Player player) {
         this.player = player;
     }
 
