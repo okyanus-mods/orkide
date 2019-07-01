@@ -2,24 +2,22 @@ package club.issizler.orkide;
 
 import club.issizler.okyanus.api.Mod;
 import club.issizler.okyanus.api.cmd.CommandBuilder;
-import club.issizler.okyanus.api.cmd.CommandManager;
-import club.issizler.okyanus.api.event.EventManager;
 import club.issizler.orkide.commands.PluginsCommand;
 import club.issizler.orkide.events.ReadyListener;
 import club.issizler.orkide.events.StopListener;
 
 import java.io.File;
 
-public class OrkideMod implements Mod {
+public class OrkideMod extends Mod {
 
-    Orkide orkide = new Orkide();
+    private Orkide orkide = new Orkide();
 
     @Override
     public void init() {
         System.setProperty("java.util.logging.manager", "org.apache.logging.log4j.jul.LogManager");
 
-        EventManager.getInstance().register(new ReadyListener(orkide));
-        EventManager.getInstance().register(new StopListener(orkide));
+        registerEvent(new ReadyListener(orkide));
+        registerEvent(new StopListener(orkide));
 
         File plugins = new File("./plugins");
         if (!plugins.exists()) {
@@ -28,9 +26,8 @@ public class OrkideMod implements Mod {
             return;
         }
 
-        CommandManager.getInstance().register(
-                new CommandBuilder()
-                        .name("plugins")
+        registerCommand(
+                new CommandBuilder("plugins")
                         .run(new PluginsCommand(this.orkide))
         );
 
