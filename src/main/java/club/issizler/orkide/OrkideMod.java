@@ -1,8 +1,8 @@
 package club.issizler.orkide;
 
 import club.issizler.okyanus.api.Mod;
-import club.issizler.okyanus.api.cmd.CommandBuilder;
-import club.issizler.orkide.commands.PluginsCommand;
+import club.issizler.orkide.events.JoinListener;
+import club.issizler.orkide.events.LeaveListener;
 import club.issizler.orkide.events.ReadyListener;
 import club.issizler.orkide.events.StopListener;
 
@@ -19,17 +19,14 @@ public class OrkideMod extends Mod {
         registerEvent(new ReadyListener(orkide));
         registerEvent(new StopListener(orkide));
 
+        registerEvent(new JoinListener());
+        registerEvent(new LeaveListener());
+
         File plugins = new File("./plugins");
         if (!plugins.exists()) {
             plugins.mkdirs();
             System.out.println("Orkide: You can now place your plugins in the newly created plugins folder!");
-            return;
         }
-
-        registerCommand(
-                new CommandBuilder("plugins")
-                        .run(new PluginsCommand(this.orkide))
-        );
 
         orkide.loadFolder(plugins);
         orkide.onEnableStartup();
