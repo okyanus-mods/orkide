@@ -5,7 +5,6 @@ import club.issizler.okyanus.api.event.EventHandler;
 import club.issizler.orkide.bukkit.entity.PlayerImpl;
 import org.bukkit.Bukkit;
 import org.bukkit.Server;
-import org.bukkit.event.Event;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
 
 import java.util.HashSet;

@@ -762,7 +762,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public World getWorld() {
-        return null;
+        return new WorldImpl(player.getWorld());
     }
 
     @Override

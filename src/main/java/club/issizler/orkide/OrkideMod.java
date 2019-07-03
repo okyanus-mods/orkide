@@ -11,8 +11,6 @@ public class OrkideMod extends Mod {
 
     @Override
     public void init() {
-        System.setProperty("java.util.logging.manager", "org.apache.logging.log4j.jul.LogManager");
-
         registerEvent(new ReadyListener(orkide));
         registerEvent(new StopListener(orkide));
 
