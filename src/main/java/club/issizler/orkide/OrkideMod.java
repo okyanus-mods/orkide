@@ -1,10 +1,7 @@
 package club.issizler.orkide;
 
 import club.issizler.okyanus.api.Mod;
-import club.issizler.orkide.events.JoinListener;
-import club.issizler.orkide.events.LeaveListener;
-import club.issizler.orkide.events.ReadyListener;
-import club.issizler.orkide.events.StopListener;
+import club.issizler.orkide.events.*;
 
 import java.io.File;
 
@@ -19,6 +16,7 @@ public class OrkideMod extends Mod {
         registerEvent(new ReadyListener(orkide));
         registerEvent(new StopListener(orkide));
 
+        registerEvent(new ChatListener());
         registerEvent(new JoinListener());
         registerEvent(new LeaveListener());
 
