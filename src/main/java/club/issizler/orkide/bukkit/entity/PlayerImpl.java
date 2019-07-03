@@ -1,5 +1,6 @@
 package club.issizler.orkide.bukkit.entity;
 
+import club.issizler.okyanus.api.Okyanus;
 import club.issizler.okyanus.api.math.Vec3d;
 import club.issizler.orkide.Globals;
 import club.issizler.orkide.bukkit.WorldImpl;
@@ -1622,12 +1623,12 @@ public class PlayerImpl implements Player {
 
     @Override
     public boolean hasPermission(String name) {
-        return false;
+        return Okyanus.getPermissionService().hasPermission(player, name);
     }
 
     @Override
     public boolean hasPermission(Permission perm) {
-        return false;
+        return Okyanus.getPermissionService().hasPermission(player, perm.getName());
     }
 
     @Override
@@ -1667,7 +1668,7 @@ public class PlayerImpl implements Player {
 
     @Override
     public boolean isOp() {
-        return false;
+        return true;
     }
 
     @Override

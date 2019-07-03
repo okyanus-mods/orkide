@@ -277,7 +277,7 @@ public class ServerImpl implements Server {
 
     @Override
     public boolean dispatchCommand(CommandSender sender, String commandLine) throws CommandException {
-        return false;
+        return commandMap.dispatch(sender, commandLine);
     }
 
     @Override
