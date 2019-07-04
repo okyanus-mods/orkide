@@ -1668,12 +1668,12 @@ public class PlayerImpl implements Player {
 
     @Override
     public boolean isOp() {
-        return true;
+        return player.isOp();
     }
 
     @Override
     public void setOp(boolean value) {
-        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
+        player.setOp(value);
     }
 
     @Override

@@ -14,8 +14,10 @@ public class OrkideMod extends Mod {
         registerEvent(new ReadyListener(orkide));
         registerEvent(new StopListener(orkide));
 
+        registerEvent(new BreakListener());
         registerEvent(new ChatListener());
         registerEvent(new CommandListener());
+        registerEvent(new DropListener());
         registerEvent(new JoinListener());
         registerEvent(new LeaveListener());
 
