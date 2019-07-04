@@ -1,5 +1,7 @@
 package club.issizler.orkide.bukkit;
 
+import club.issizler.okyanus.api.math.Vec3d;
+import club.issizler.orkide.bukkit.block.BlockImpl;
 import org.bukkit.*;
 import org.bukkit.block.Biome;
 import org.bukkit.block.Block;
@@ -32,12 +34,12 @@ public class WorldImpl implements World {
 
     @Override
     public Block getBlockAt(int x, int y, int z) {
-        return null;
+        return new BlockImpl(world.getBlockAt(new Vec3d(x, y, z)));
     }
 
     @Override
     public Block getBlockAt(Location location) {
-        return null;
+        return new BlockImpl(world.getBlockAt(new Vec3d(location.getX(), location.getY(), location.getZ())));
     }
 
     @Override
@@ -772,11 +774,6 @@ public class WorldImpl implements World {
 
     @Override
     public Location locateNearestStructure(Location origin, StructureType structureType, int radius, boolean findUnexplored) {
-        return null;
-    }
-
-    @Override
-    public Spigot spigot() {
         return null;
     }
 

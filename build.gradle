@@ -23,7 +23,7 @@ configurations {
 dependencies {
     implementation "club.issizler.okyanus:api:0.1.0-SNAPSHOT"
 
-    fatJar "org.spigotmc:spigot-api:1.14.3-R0.1-SNAPSHOT"
+    fatJar "org.bukkit:bukkit:1.14.3-R0.1-SNAPSHOT"
 }
 
 jar {

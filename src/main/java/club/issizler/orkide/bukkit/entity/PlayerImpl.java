@@ -1047,11 +1047,6 @@ public class PlayerImpl implements Player {
     }
 
     @Override
-    public Spigot spigot() {
-        return null;
-    }
-
-    @Override
     public boolean isOnline() {
         return false;
     }

@@ -374,11 +374,6 @@ public class ItemImpl implements Item {
     }
 
     @Override
-    public Spigot spigot() {
-        return null;
-    }
-
-    @Override
     public String getCustomName() {
         return null;
     }

@@ -1,5 +1,7 @@
 package club.issizler.orkide.bukkit.block;
 
+import club.issizler.okyanus.api.math.Vec3d;
+import club.issizler.orkide.bukkit.WorldImpl;
 import org.bukkit.*;
 import org.bukkit.block.*;
 import org.bukkit.block.data.BlockData;
@@ -73,22 +75,23 @@ public class BlockImpl implements Block {
 
     @Override
     public int getX() {
-        return 0;
+        return (int) block.getLocation().x;
     }
 
     @Override
     public int getY() {
-        return 0;
+        return (int) block.getLocation().y;
     }
 
     @Override
     public int getZ() {
-        return 0;
+        return (int) block.getLocation().z;
     }
 
     @Override
     public Location getLocation() {
-        return null;
+        Vec3d location = block.getLocation();
+        return new Location(new WorldImpl(block.getWorld()), location.x, location.y, location.z);
     }
 
     @Override

@@ -43,11 +43,6 @@ public class ConsoleCommandSenderImpl implements ConsoleCommandSender {
     }
 
     @Override
-    public Spigot spigot() {
-        return null;
-    }
-
-    @Override
     public boolean isConversing() {
         return false;
     }
@@ -74,7 +69,7 @@ public class ConsoleCommandSenderImpl implements ConsoleCommandSender {
 
     @Override
     public void sendRawMessage(String message) {
-
+        sendMessage(message);
     }
 
     @Override

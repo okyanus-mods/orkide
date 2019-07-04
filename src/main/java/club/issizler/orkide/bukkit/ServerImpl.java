@@ -1,5 +1,6 @@
 package club.issizler.orkide.bukkit;
 
+import club.issizler.orkide.Orkide;
 import club.issizler.orkide.bukkit.command.ConsoleCommandSenderImpl;
 import club.issizler.orkide.bukkit.entity.PlayerImpl;
 import club.issizler.orkide.bukkit.scheduler.BukkitSchedulerImpl;
@@ -61,8 +62,8 @@ public class ServerImpl implements Server {
 
     @Override
     public String getBukkitVersion() {
-        return "1.14.3-R0.1-SNAPSHOT";
-    } // Fake being Bukkit 1.14.3-R0.1-SNAPSHOT
+        return Orkide.BUKKIT_VERSION;
+    }
 
     @Override
     public Collection<? extends Player> getOnlinePlayers() {
@@ -608,11 +609,6 @@ public class ServerImpl implements Server {
     @Override
     public UnsafeValues getUnsafe() {
         return new UnsafeValuesImpl();
-    }
-
-    @Override
-    public Spigot spigot() {
-        return null;
     }
 
     @Override
