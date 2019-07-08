@@ -19,13 +19,11 @@ import org.bukkit.util.RayTraceResult;
 import org.bukkit.util.Vector;
 
 import java.io.File;
-import java.util.Collection;
-import java.util.List;
-import java.util.Set;
-import java.util.UUID;
+import java.util.*;
 import java.util.function.Predicate;
 
 public class WorldImpl implements World {
+
     private final club.issizler.okyanus.api.world.World world;
 
     public WorldImpl(club.issizler.okyanus.api.world.World world) {
@@ -159,6 +157,31 @@ public class WorldImpl implements World {
 
     @Override
     public Collection<Chunk> getForceLoadedChunks() {
+        return null;
+    }
+
+    @Override
+    public boolean addPluginChunkTicket(int i, int i1, Plugin plugin) {
+        return false;
+    }
+
+    @Override
+    public boolean removePluginChunkTicket(int i, int i1, Plugin plugin) {
+        return false;
+    }
+
+    @Override
+    public void removePluginChunkTickets(Plugin plugin) {
+        throw new RuntimeException("Orkide doesn't support this yet! Contact the devs asap!");
+    }
+
+    @Override
+    public Collection<Plugin> getPluginChunkTickets(int i, int i1) {
+        return null;
+    }
+
+    @Override
+    public Map<Plugin, Collection<Chunk>> getPluginChunkTickets() {
         return null;
     }
 
@@ -806,4 +829,5 @@ public class WorldImpl implements World {
     public Set<String> getListeningPluginChannels() {
         return null;
     }
+
 }
